@@ -1,0 +1,16 @@
+{
+    "name": "robson",
+    "version": "1.0.0",
+    "description": "Bot de gerenciamento de base de dados.",
+    "main": "index.js",
+    "scripts": {
+        "test": "node ."
+    },
+    "author": "LostConnection",
+    "license": "ISC",
+    "dependencies": {
+        "discord.js": "^13.6.0",
+        "mongoose": "^6.0.14",
+        "node-fetch": "^3.1.0"
+    }
+}
