@@ -130,5 +130,5 @@ dist
 .pnp.*
 
 # Custom
-src/assets/config.json
+assets/config.json
 src/commands/info/botinfo.js
