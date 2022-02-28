@@ -16,6 +16,6 @@ Servidores      ${this.client.guilds.cache.size}
         `)
 
         this.client.registerCommands()
-        await this.client.connectToDatabase()
+        //await this.client.connectToDatabase()
     }
 }
