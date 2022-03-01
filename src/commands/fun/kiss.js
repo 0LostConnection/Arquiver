@@ -1,7 +1,7 @@
 const { MessageEmbed, MessageButton, MessageActionRow } = require('discord.js')
-const CommandStructure = require('../../infra/structures/CommandStructure')
-const { Clear } = require('../../infra/structures/Colors')
-const GetGif = require('../../infra/structures/GetGif')
+const Command = require('../../infra/structures/Command')
+const { Clear } = require('../../infra/utils/Colors')
+const GetGif = require('../../infra/utils/GetGif')
 
 const replyButton = new MessageActionRow()
     .addComponents(
@@ -14,7 +14,7 @@ const replyButton = new MessageActionRow()
         ]
     )
 
-module.exports = class extends CommandStructure {
+module.exports = class extends Command {
     constructor(client) {
         super(client, {
             name: 'beijar',

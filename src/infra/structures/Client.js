@@ -26,9 +26,9 @@ module.exports = class extends Client {
         const cmdsCategories = readdirSync(path)
 
         for (const category of cmdsCategories) {
-            const commandsList = readdirSync(`${path}/${category}`)
-
-            for (const command of commandsList) {
+            const commandList = readdirSync(`${path}/${category}`)
+            console.log(category)
+            for (const command of commandList) {
                 const commandClass = require(join(process.cwd(), `${path}/${category}/${command}`))
                 const cmd = new (commandClass)(this)
                 if (cmd.disable) return
