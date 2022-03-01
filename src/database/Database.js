@@ -1,6 +1,6 @@
 module.exports = async (guildId) => {
     if (!guildId) return console.log('Provide and ID!')
-    const { connect, disconnect } = require('mongoose')
+    const { connect } = require('mongoose')
     const Models = require('./Models')
 
     const connection = await connect(process.env.DATABASE_URL)
@@ -10,7 +10,7 @@ module.exports = async (guildId) => {
     const database = { connection, ...Models }
     return {
         guild: await database.guilds.findById(guildId) || new database.guilds({ _id: interaction.guild.id }),
-        disconnect: function () {
+        disconnect: () => {
             connection.disconnect()/* .then(() => {
                 console.log('\x1b[32m%s\x1b[0m', 'Conexão com o banco de dados encerrada!')
             }) */

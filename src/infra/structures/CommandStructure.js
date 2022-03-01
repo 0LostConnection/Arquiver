@@ -5,6 +5,7 @@ class Command {
         this.development = options.development
         this.description = options.description
         this.options = options.options
+        this.disable = options.disable
     }
 }
 

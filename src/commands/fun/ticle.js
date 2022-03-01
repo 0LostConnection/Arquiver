@@ -19,6 +19,7 @@ module.exports = class extends CommandStructure {
         super(client, {
             name: 'cócegas',
             description: 'Faça um cócegas na pessoa desejada.',
+            disable: true,
             options: [
                 {
                     name: 'membro',

@@ -30,8 +30,8 @@ module.exports = class extends Client {
 
             for (const command of commandsList) {
                 const commandClass = require(join(process.cwd(), `${path}/${category}/${command}`))
-
                 const cmd = new (commandClass)(this)
+                if (cmd.disable) return
                 this.commands.push(cmd)
             }
         }
