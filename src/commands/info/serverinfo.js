@@ -1,5 +1,5 @@
-const Command = reuire('../../infra/structures/Command')
-const { MessageEmbed, MessageButton, MessageActionRow }
+const Command = require('../../infra/structures/Command')
+const { MessageEmbed, MessageButton, MessageActionRow } = require('discord.js')
 const ttd = require('../../infra/utils/TimestampToDate')
 const getBotInvite = require('../../infra/utils/Invites')
 const { Dark } =  require('../../infra/utils/Colors')

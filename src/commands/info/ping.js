@@ -13,10 +13,10 @@ module.exports = class extends Command {
     run = async (interaction) => {
         interaction.reply({ content: '🏓 Pong!'})
         
-/*         const db = await database(interaction.guildId)
+        const db = await database(interaction.guildId)
         //db.guild.channels.punishment = 123456
         await db.guild.save()
-        db.disconnect() */
+        db.disconnect()
 
 /*         const getBotInvite = require('../../infra/utils/Invites')
         const invite = await Promise.resolve(getBotInvite(interaction))

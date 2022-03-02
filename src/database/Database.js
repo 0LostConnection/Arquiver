@@ -9,7 +9,7 @@ module.exports = async (guildId) => {
 
     const database = { connection, ...Models }
     return {
-        guild: await database.guilds.findById(guildId) || new database.guilds({ _id: interaction.guild.id }),
+        guild: await database.guilds.findById(guildId) || new database.guilds({ _id: guildId }),
         disconnect: () => {
             connection.disconnect()/* .then(() => {
                 console.log('\x1b[32m%s\x1b[0m', 'Conexão com o banco de dados encerrada!')
