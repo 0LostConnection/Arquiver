@@ -8,7 +8,6 @@ module.exports = class extends Command {
     constructor(client) {
         super(client, {
             name: 'serverinfo',
-            disable: false,
             description: 'Veja algumas informações do servidor atual.'
         })
     }

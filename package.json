@@ -1,12 +1,12 @@
 {
-    "name": "robson",
+    "name": "arquiver",
     "version": "1.0.0",
-    "description": "Bot de gerenciamento de base de dados.",
+    "description": "Bot de gerenciamento.",
     "main": "index.js",
     "scripts": {
         "test": "node ."
     },
-    "author": "LostConnection",
+    "author": "Geovane Saraiva da Silva",
     "license": "ISC",
     "dependencies": {
         "discord.js": "^13.6.0",

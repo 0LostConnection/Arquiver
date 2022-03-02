@@ -27,10 +27,11 @@ module.exports = class extends Client {
 
         for (const category of cmdsCategories) {
             const commandList = readdirSync(`${path}/${category}`)
-            console.log(category)
+            
             for (const command of commandList) {
                 const commandClass = require(join(process.cwd(), `${path}/${category}/${command}`))
                 const cmd = new (commandClass)(this)
+
                 if (cmd.disable) return
                 this.commands.push(cmd)
             }
@@ -45,7 +46,6 @@ module.exports = class extends Client {
 
             for (const event of eventsList) {
                 const eventClass = require(join(process.cwd(), `${path}/${category}/${event}`))
-
                 const evt = new (eventClass)(this)
 
                 this.on(evt.name, evt.run)

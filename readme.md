@@ -1,6 +1,6 @@
 [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/0LostConnection/Robson/blob/main/LICENSE)
 ![Version](https://img.shields.io/badge/Version-1.1.0-brightgreen)
-# Robson the Bot
+# Arquiver
 
 Um bot focado em em armazenar informações.
 
