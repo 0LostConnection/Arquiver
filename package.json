@@ -1,7 +1,7 @@
 {
     "name": "arquiver",
     "version": "1.0.0",
-    "description": "Bot de gerenciamento de base de dados.",
+    "description": "Bot de gerenciamento de dados.",
     "main": "index.js",
     "scripts": {
         "test": "node ."
