@@ -4,7 +4,6 @@ const { Clear } = require('../../infra/utils/Colors')
 const { getArray } = require('../../infra/utils/PermissionsDictionary')
 const { ownerIds, permissions } = require('../../../assets/config.json')
 
-
 module.exports = class extends Event {
     constructor(client) {
         super(client, {
