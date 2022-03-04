@@ -12,7 +12,7 @@ const bot = new Client({
 })
 
 process.openStdin('unhandledRejection', error => {
-    console.log('Error:\n', error)
+    console.error("Error:\n", error)
 })
 
 //bot.login(token)

@@ -133,3 +133,4 @@ dist
 #assets/config.json
 src/commands/info/botinfo.js
 .gitpod.yml
+.vscode

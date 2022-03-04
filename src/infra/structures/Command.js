@@ -6,6 +6,9 @@ class Command {
         this.description = options.description
         this.options = options.options
         this.disable = options.disable
+        this.guildOnly = options.guildOnly
+        this.ownerOnly = options.ownerOnly
+        this.permissions = options.permissions
     }
 }
 
