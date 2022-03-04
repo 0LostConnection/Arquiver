@@ -52,15 +52,4 @@ module.exports = class extends Client {
             }
         }
     }
-
-    /* async connectToDatabase() {
-        const { connect } = require('mongoose')
-        const Models = require('../../database/Models')
-
-        const connection = await connect(process.env.DATABASE_URL)
-
-        console.log('\x1b[32m%s\x1b[0m', 'Banco de dados conectado com sucesso!')
-
-        this.db = { connection, ...Models }
-    } */
 }
