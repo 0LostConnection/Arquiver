@@ -1,6 +1,6 @@
-const Event = require(`${process.cwd()}/src/infra/structures/Event`)
+const eventStructure = require(`../../infra/structures/EventStructure`)
 
-module.exports = class extends Event {
+module.exports = class extends eventStructure {
     constructor(client) {
         super(client, {
             name: 'ready'
@@ -8,7 +8,6 @@ module.exports = class extends Event {
     }
 
     run = async (interaction) => {
-
         console.log(`
 Status          Online
 Nome            ${this.client.user.tag}

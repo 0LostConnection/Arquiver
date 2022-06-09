@@ -1,6 +1,6 @@
 const { MessageEmbed, MessageButton, MessageActionRow } = require('discord.js')
-const Command = require('../../infra/structures/Command')
-const { Clear } = require('../../infra/utils/Colors')
+const Command = require('../../infra/structures/CommandStructure')
+const { ClearColors } = require('../../infra/utils/Colors')
 const GetGif = require('../../infra/utils/GetGif')
 
 const replyButton = new MessageActionRow()
@@ -35,7 +35,7 @@ module.exports = class extends Command {
 
         let embed = new MessageEmbed()
             .setTitle('Que coisa fofa! :heart_eyes_cat:')
-            .setColor(Clear.Pink)
+            .setColor(ClearColors.Pink)
             .setDescription(`${interaction.user} beijou ${interaction.options.getUser('membro')}!`)
             .setImage(gif)
             .setTimestamp()

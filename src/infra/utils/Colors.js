@@ -1,5 +1,5 @@
 module.exports = {
-    Clear: {
+    ClearColors: {
         Red: "#FF0400",
         Orange: "#FF7400",
         Yellow: "#fcd700",
@@ -12,7 +12,7 @@ module.exports = {
         Cyan: "#0AA1BF",
         Water: "#00FFC9"
     },
-    Dark: {
+    DarkColors: {
         Red: "#A80000",
         Orange: "#cc6112",
         Olive: "#A0A800",

@@ -1,8 +1,17 @@
-const Command = require('../../infra/structures/Command')
+const Command = require('../../infra/structures/CommandStructure')
 const { MessageEmbed, MessageButton, MessageActionRow } = require('discord.js')
 const ttd = require('../../infra/utils/TimestampToDate')
 const getBotInvite = require('../../infra/utils/Invites')
-const { Dark } =  require('../../infra/utils/Colors')
+const { DarkColors } = require('../../infra/utils/Colors')
+
+const inviteButton = new MessageActionRow()
+    .addComponents(
+        new MessageButton()
+            .setStyle('LINK')
+            .setEmoji('🔗')
+            .setURL(`https://lost-redirect.vercel.app/?copy=&alertText=Convite%20copiado%20para%20sua%20área%20de%20transferência!`)
+    )
+    //console.log(inviteButton.toJSON())
 
 module.exports = class extends Command {
     constructor(client) {
@@ -17,13 +26,13 @@ module.exports = class extends Command {
         const createdAt = ttd(interaction.guild.createdTimestamp)
         const invite = await Promise.resolve(getBotInvite(interaction))
 
-        const inviteButton = new MessageActionRow()
-            .addComponents(
-                new MessageButton()
-                    .setStyle('LINK')
-                    .setEmoji('🔗')
-                    .setURL(`https://lost-redirect.vercel.app/?copy=${invite}&alertText=Convite%20copiado%20para%20sua%20área%20de%20transferência!`)
-            )
+        /*         const inviteButton = new MessageActionRow()
+                    .addComponents(
+                        new MessageButton()
+                            .setStyle('LINK')
+                            .setEmoji('🔗')
+                            .setURL(`https://lost-redirect.vercel.app/?copy=${invite}&alertText=Convite%20copiado%20para%20sua%20área%20de%20transferência!`)
+                    ) */
 
         const embed = new MessageEmbed()
             .setTitle(interaction.guild.name)

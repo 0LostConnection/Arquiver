@@ -1,7 +1,8 @@
-const Client = require('./src/infra/structures/Client')
-const { token } = require('./assets/config.json')
+const discordClientHandler = require('./src/infra/structures/DiscordClientHandler')
+const { botToken } = require('./assets/config.json')
+const GetGif = require('./src/infra/utils/GetGif')
 
-const bot = new Client({
+const botInstance = new discordClientHandler({
     intents: [
         'GUILDS',
         'GUILD_MESSAGE_REACTIONS',
@@ -15,5 +16,4 @@ process.openStdin('unhandledRejection', error => {
     console.error("Error:\n", error)
 })
 
-//bot.login(token)
-bot.login(process.env.DEV_TOKEN)
+botInstance.login(botToken)

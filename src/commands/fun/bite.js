@@ -1,6 +1,6 @@
 const { MessageEmbed, MessageButton, MessageActionRow } = require('discord.js')
-const Command = require('../../infra/structures/Command')
-const { Clear } = require('../../infra/utils/Colors')
+const Command = require('../../infra/structures/CommandStructure')
+const { ClearColors } = require('../../infra/utils/Colors')
 const GetGif = require('../../infra/utils/GetGif')
 
 const replyButton = new MessageActionRow()
@@ -13,7 +13,7 @@ const replyButton = new MessageActionRow()
                 .setEmoji('🔁')
         ]
     )
-
+    
 module.exports = class extends Command {
     constructor(client) {
         super(client, {

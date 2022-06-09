@@ -1,6 +1,6 @@
-const Command = require('../../infra/structures/Command')
+const Command = require('../../infra/structures/CommandStructure')
 const { MessageEmbed } = require('discord.js')
-const { Clear } = require('../../infra/utils/Colors')
+const { ClearColors } = require('../../infra/utils/Colors')
 
 module.exports = class extends Command {
     constructor(client) {

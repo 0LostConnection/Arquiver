@@ -1,4 +1,4 @@
-const Command = require(`${process.cwd()}/src/infra/structures/Command`)
+const Command = require(`${process.cwd()}/src/infra/structures/CommandStructure`)
 const database = require(`${process.cwd()}/src/database/Database`)
 const { dictionary: permDic, getArray} = require('../../infra/utils/PermissionsDictionary')
 

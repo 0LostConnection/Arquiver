@@ -1,9 +1,10 @@
 {
-    "token": "",
-    "ownerIds": [
-        "437249534096048130"
+    "botToken": "",
+    "ownersIDs": [
+        "437249534096048130",
+        "388650350074265601"
     ],
-    "permissions": [
+    "botPermissions": [
         "KICK_MEMBERS",
         "BAN_MEMBERS",
         "MENTION_EVERYONE",

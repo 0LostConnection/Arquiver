@@ -1,6 +1,6 @@
 const { MessageEmbed, MessageButton, MessageActionRow } = require('discord.js')
-const Command = require('../../infra/structures/Command')
-const { Dark } = require('../../infra/utils/Colors')
+const Command = require('../../infra/structures/CommandStructure')
+const { DarkColors } = require('../../infra/utils/Colors')
 const GetGif = require('../../infra/utils/GetGif')
 
 const replyButton = new MessageActionRow()

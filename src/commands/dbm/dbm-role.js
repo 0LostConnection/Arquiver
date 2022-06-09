@@ -1,4 +1,4 @@
-const Command = require(`${process.cwd()}/src/infra/structures/Command`)
+const Command = require(`${process.cwd()}/src/infra/structures/CommandStructure`)
 
 module.exports = class extends Command {
     constructor(client) {
@@ -64,5 +64,8 @@ module.exports = class extends Command {
     }
 
     run = (interaction) => {
+        const subCommand = interaction.options.getSubcommand()
+
+        require(`../../subCommands/dbm/role/${subCommand}`)(this.client, interaction)
     }
 }
